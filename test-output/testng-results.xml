@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="3" total="9" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-12T14:53:31 IST" name="Running parallel test cases" finished-at="2022-08-12T14:53:31 IST" duration-ms="25">
+    <groups>
+      <group name="smoke">
+        <method signature="sample1.sample102()[pri:0, instance:Test1.sample1@48974e45]" name="sample102" class="Test1.sample1"/>
+        <method signature="sample2.sample202()[pri:0, instance:Test1.sample2@6bedbc4d]" name="sample202" class="Test1.sample2"/>
+        <method signature="sample3.sample303()[pri:0, instance:Test1.sample3@2fd1433e]" name="sample303" class="Test1.sample3"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2022-08-12T14:53:31 IST" name="Loan sample1,2,3" finished-at="2022-08-12T14:53:31 IST" duration-ms="25">
+      <class name="Test1.sample3">
+        <test-method is-config="true" signature="sample305()[pri:0, instance:Test1.sample3@2fd1433e]" started-at="2022-08-12T14:53:31 IST" name="sample305" finished-at="2022-08-12T14:53:31 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample305 -->
+        <test-method signature="sample303()[pri:0, instance:Test1.sample3@2fd1433e]" started-at="2022-08-12T14:53:31 IST" name="sample303" finished-at="2022-08-12T14:53:31 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample303 -->
+      </class> <!-- Test1.sample3 -->
+      <class name="Test1.sample1">
+        <test-method is-config="true" signature="sample105()[pri:0, instance:Test1.sample1@48974e45]" started-at="2022-08-12T14:53:31 IST" name="sample105" finished-at="2022-08-12T14:53:31 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample105 -->
+        <test-method is-config="true" signature="sample103()[pri:0, instance:Test1.sample1@48974e45]" started-at="2022-08-12T14:53:31 IST" name="sample103" finished-at="2022-08-12T14:53:31 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample103 -->
+        <test-method signature="sample10(java.lang.String)[pri:0, instance:Test1.sample1@48974e45]" started-at="2022-08-12T14:53:31 IST" name="sample10" finished-at="2022-08-12T14:53:31 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'URL' is required by @Test on method sample10 but has not been marked @Optional or defined
+in D:\eclipse-java-2022-06-R-win32-x86_64\TestNGTutorial\testngsample4.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'URL' is required by @Test on method sample10 but has not been marked @Optional or defined
+in D:\eclipse-java-2022-06-R-win32-x86_64\TestNGTutorial\testngsample4.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample10 -->
+        <test-method is-config="true" signature="sample107()[pri:0, instance:Test1.sample1@48974e45]" started-at="2022-08-12T14:53:31 IST" name="sample107" finished-at="2022-08-12T14:53:31 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample107 -->
+        <test-method signature="sample101()[pri:0, instance:Test1.sample1@48974e45]" started-at="2022-08-12T14:53:31 IST" name="sample101" finished-at="2022-08-12T14:53:31 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample101 -->
+        <test-method is-config="true" signature="sample107()[pri:0, instance:Test1.sample1@48974e45]" started-at="2022-08-12T14:53:31 IST" name="sample107" finished-at="2022-08-12T14:53:31 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample107 -->
+        <test-method is-config="true" signature="sample108()[pri:0, instance:Test1.sample1@48974e45]" started-at="2022-08-12T14:53:31 IST" name="sample108" finished-at="2022-08-12T14:53:31 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample108 -->
+        <test-method signature="sample102()[pri:0, instance:Test1.sample1@48974e45]" started-at="2022-08-12T14:53:31 IST" name="sample102" finished-at="2022-08-12T14:53:31 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample102 -->
+        <test-method is-config="true" signature="sample108()[pri:0, instance:Test1.sample1@48974e45]" started-at="2022-08-12T14:53:31 IST" name="sample108" finished-at="2022-08-12T14:53:31 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample108 -->
+        <test-method is-config="true" signature="sample104()[pri:0, instance:Test1.sample1@48974e45]" started-at="2022-08-12T14:53:31 IST" name="sample104" finished-at="2022-08-12T14:53:31 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample104 -->
+        <test-method is-config="true" signature="sample106()[pri:0, instance:Test1.sample1@48974e45]" started-at="2022-08-12T14:53:31 IST" name="sample106" finished-at="2022-08-12T14:53:31 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample106 -->
+      </class> <!-- Test1.sample1 -->
+      <class name="Test1.sample2">
+        <test-method signature="sample201()[pri:0, instance:Test1.sample2@6bedbc4d]" started-at="2022-08-12T14:53:31 IST" name="sample201" finished-at="2022-08-12T14:53:31 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample201 -->
+        <test-method signature="sample202()[pri:0, instance:Test1.sample2@6bedbc4d]" started-at="2022-08-12T14:53:31 IST" name="sample202" finished-at="2022-08-12T14:53:31 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample202 -->
+      </class> <!-- Test1.sample2 -->
+    </test> <!-- Loan sample1,2,3 -->
+  </suite> <!-- Running parallel test cases -->
+</testng-results>

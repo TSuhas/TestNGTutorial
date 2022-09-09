@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Running_parallel_test_cases" class="navigator-link">
+              <span class="suite-name border-failed">Running parallel test cases</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Running_parallel_test_cases" class="navigator-link ">
+                    <span>D:\eclipse-java-2022-06-R-win32-x86_64\TestNGTutorial\testngsample4.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Running_parallel_test_cases" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Running_parallel_test_cases" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Running_parallel_test_cases" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Running_parallel_test_cases" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Running_parallel_test_cases" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Running_parallel_test_cases" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Running_parallel_test_cases" class="hide-methods failed suite-Running_parallel_test_cases"> (hide)</a> <!-- hide-methods failed suite-Running_parallel_test_cases -->
+                      <a href="#" panel-name="suite-Running_parallel_test_cases" class="show-methods failed suite-Running_parallel_test_cases"> (show)</a> <!-- show-methods failed suite-Running_parallel_test_cases -->
+                    </span>
+                    <div class="method-list-content failed suite-Running_parallel_test_cases">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Running_parallel_test_cases" title="Test1.sample1" class="method navigator-link" hash-for-method="sample10">sample10</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Running_parallel_test_cases -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Running_parallel_test_cases" class="hide-methods passed suite-Running_parallel_test_cases"> (hide)</a> <!-- hide-methods passed suite-Running_parallel_test_cases -->
+                      <a href="#" panel-name="suite-Running_parallel_test_cases" class="show-methods passed suite-Running_parallel_test_cases"> (show)</a> <!-- show-methods passed suite-Running_parallel_test_cases -->
+                    </span>
+                    <div class="method-list-content passed suite-Running_parallel_test_cases">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Running_parallel_test_cases" title="Test1.sample1" class="method navigator-link" hash-for-method="sample101">sample101</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Running_parallel_test_cases" title="Test1.sample1" class="method navigator-link" hash-for-method="sample102">sample102</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Running_parallel_test_cases" title="Test1.sample2" class="method navigator-link" hash-for-method="sample201">sample201</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Running_parallel_test_cases" title="Test1.sample2" class="method navigator-link" hash-for-method="sample202">sample202</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Running_parallel_test_cases" title="Test1.sample3" class="method navigator-link" hash-for-method="sample303">sample303</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Running_parallel_test_cases -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Running_parallel_test_cases" class="panel Running_parallel_test_cases">
+          <div class="suite-Running_parallel_test_cases-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Test1.sample1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="sample10">
+                  </a> <!-- sample10 -->
+                  <span class="method-name">sample10</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;URL&apos; is required by @Test on method sample10 but has not been marked @Optional or defined
+in D:\eclipse-java-2022-06-R-win32-x86_64\TestNGTutorial\testngsample4.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Running_parallel_test_cases-class-failed -->
+          <div class="suite-Running_parallel_test_cases-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Test1.sample1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="sample101">
+                  </a> <!-- sample101 -->
+                  <span class="method-name">sample101</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sample102">
+                  </a> <!-- sample102 -->
+                  <span class="method-name">sample102</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Running_parallel_test_cases-class-passed -->
+          <div class="suite-Running_parallel_test_cases-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Test1.sample2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="sample201">
+                  </a> <!-- sample201 -->
+                  <span class="method-name">sample201</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sample202">
+                  </a> <!-- sample202 -->
+                  <span class="method-name">sample202</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Running_parallel_test_cases-class-passed -->
+          <div class="suite-Running_parallel_test_cases-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Test1.sample3</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="sample303">
+                  </a> <!-- sample303 -->
+                  <span class="method-name">sample303</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Running_parallel_test_cases-class-passed -->
+        </div> <!-- panel Running_parallel_test_cases -->
+        <div panel-name="test-xml-Running_parallel_test_cases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\eclipse-java-2022-06-R-win32-x86_64\TestNGTutorial\testngsample4.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Running parallel test cases&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Loan sample1,2,3&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Test1.sample1&quot;/&gt;
+      &lt;class name=&quot;Test1.sample2&quot;/&gt;
+      &lt;class name=&quot;Test1.sample3&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;sample303&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Test1.sample3 --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Loan sample1,2,3 --&gt;
+&lt;/suite&gt; &lt;!-- Running parallel test cases --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Running_parallel_test_cases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Running parallel test cases</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Loan sample1,2,3 (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Running_parallel_test_cases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Running parallel test cases</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">sample102</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">sample202</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">sample303</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Running_parallel_test_cases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Running parallel test cases</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Running_parallel_test_cases');
+function tableData_Running_parallel_test_cases() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'sample102')
+data.setCell(0, 2, 'Test1.sample1')
+data.setCell(0, 3, 1);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'sample101')
+data.setCell(1, 2, 'Test1.sample1')
+data.setCell(1, 3, 1);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'sample303')
+data.setCell(2, 2, 'Test1.sample3')
+data.setCell(2, 3, 1);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'sample201')
+data.setCell(3, 2, 'Test1.sample2')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'sample202')
+data.setCell(4, 2, 'Test1.sample2')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'sample10')
+data.setCell(5, 2, 'Test1.sample1')
+data.setCell(5, 3, 0);
+window.suiteTableData['Running_parallel_test_cases']= { tableData: data, tableDiv: 'times-div-Running_parallel_test_cases'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 25 ms</span>
+              <div id="times-div-Running_parallel_test_cases">
+              </div> <!-- times-div-Running_parallel_test_cases -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Running_parallel_test_cases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Running parallel test cases</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Running_parallel_test_cases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">3 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Test1.sample3</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">sample302</span>
+                <br/>
+                <span class="ignored-method-name">sampple301</span>
+                <br/>
+                <span class="ignored-method-name">sample304</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Running_parallel_test_cases" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test1.sample1</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">sample105</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">sample103</span>
+                <span class="method-start">6 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test1.sample3</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">sample305</span>
+                <span class="method-start">6 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test1.sample1</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">sample107</span>
+                <span class="method-start">22 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">sample101</span>
+                <span class="method-start">23 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">sample107</span>
+                <span class="method-start">25 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">sample108</span>
+                <span class="method-start">25 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">sample102</span>
+                <span class="method-start">25 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">sample108</span>
+                <span class="method-start">26 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test1.sample2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">sample201</span>
+                <span class="method-start">27 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test1.sample3</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">sample303</span>
+                <span class="method-start">28 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test1.sample2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">sample202</span>
+                <span class="method-start">28 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test1.sample1</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">sample104</span>
+                <span class="method-start">30 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">sample106</span>
+                <span class="method-start">75 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
